@@ -1,0 +1,370 @@
+<!-- Full Professional Personalized Portfolio Website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brajakishore Sahoo | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    body {
+  font-family: 'Inter', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+      background: rgba(33, 37, 41, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #ffc107 !important;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(33, 150, 243, 0.6)), url('https://images.unsplash.com/photo-1581092160622-1e7c1b9f79a2?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .typed-text {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.6rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    section {
+      padding: 100px 0;
+    }
+    .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #212529;
+}
+    .badge {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 25px;
+    }
+    footer {
+  background: linear-gradient(to right, #343a40, #495057);
+  color: #ffffff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+    footer a {
+      color: #ffc107;
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<style>#particles-js { position: absolute; width: 100%; height: 100%; z-index: 0; top: 0; left: 0; }</style>
+$1
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Brajakishore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero position-relative" id="home">
+  <div id="particles-js"></div>
+    <h1>Brajakishore Sahoo</h1>
+    <p id="typed" class="typed-text"></p>
+    <div class="social-icons mt-3">
+      <a href="https://github.com/BrajakishoreSahoo" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/brajakishore-sahoo-268482264" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <!-- Resume Sections Injected Below -->
+
+  <section id="about" class="bg-white text-dark" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead text-center text-dark">I'm a Computer Science Engineering student at SOA University with a passion for web development, problem-solving, and data-driven innovation. I thrive on building clean, efficient, and interactive web applications using modern technologies.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title">Skills</h2>
+      <span class="badge bg-primary m-2">Java</span>
+      <span class="badge bg-primary m-2">C</span>
+      <span class="badge bg-primary m-2">Python</span>
+      <span class="badge bg-primary m-2">C++ (Basic)</span>
+      <span class="badge bg-secondary m-2">HTML</span>
+      <span class="badge bg-secondary m-2">CSS</span>
+      <span class="badge bg-secondary m-2">Bootstrap</span>
+      <span class="badge bg-secondary m-2">JavaScript</span>
+      <span class="badge bg-info m-2">MySQL</span>
+      <span class="badge bg-info m-2">Data Structures & Algorithms</span>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-white" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Personal Portfolio Website</h5>
+              <p class="card-text">A responsive personal website built with HTML, CSS, JavaScript, and Bootstrap to showcase my resume, skills, and project work in a sleek interface.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Personalized Medicine Recommendation System</h5>
+              <p class="card-text">A healthcare-focused web application that recommends individualized treatments based on a patient’s unique profile, leveraging frontend development with HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-center">Education</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 text-center">
+            <h5>B.Tech in CSE</h5>
+            <p>S’O’A University, Bhubaneswar</p>
+            <p class="text-muted">CGPA: 8.39</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 text-center">
+            <h5>12th Grade (CHSE)</h5>
+            <p>Siddhi Vinayak Higher Secondary School, Balasore</p>
+            <p class="text-muted">Score: 87.16%</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 text-center">
+            <h5>10th Grade (HSC)</h5>
+            <p>Subarnarekha Govt High School, Baliapal</p>
+            <p class="text-muted">Score: 84.33%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="certifications" class="bg-white text-dark py-5" data-aos="zoom-in-up">
+  <div class="container">
+    <h2 class="section-title text-center">Certifications</h2>
+    <ul class="list-group list-group-flush text-center">
+      <li class="list-group-item">Build Your Own Generative AI Model – NXTWAVE</li>
+      <li class="list-group-item">Data Visualization – Forage</li>
+    </ul>
+  </div>
+</section>
+
+<section id="hobbies" class="bg-light text-dark py-5" data-aos="zoom-in-left">
+  <div class="container">
+    <h2 class="section-title text-center">Hobbies</h2>
+    <p class="text-center">Reading tech blogs, solving coding challenges, exploring AI tools, and playing strategy games.</p>
+  </div>
+</section>
+
+<section id="extracurricular" class="bg-white text-dark py-5" data-aos="zoom-in-right">
+  <div class="container">
+    <h2 class="section-title text-center">Co-Curricular & Extra Curricular Activities</h2>
+    <ul class="list-group list-group-flush text-center">
+      <li class="list-group-item">Participated in Inter-College Coding Competitions</li>
+      <li class="list-group-item">Member of the University Coding Club</li>
+      <li class="list-group-item">Volunteered in National Science Day and Tech Fests</li>
+    </ul>
+  </div>
+</section>
+
+<!-- JS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  // Particle background config
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": { "value": "#ffffff" },
+      "shape": {
+        "type": "circle",
+        "stroke": { "width": 0, "color": "#000000" },
+        "polygon": { "nb_sides": 5 }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": { "enable": false }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": { "enable": false }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 3,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" },
+        "resize": true
+      },
+      "modes": {
+        "repulse": { "distance": 100 },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+
+  // AOS (Animate on Scroll) initialization
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  // Typed.js initialization for hero text
+  new Typed("#typed", {
+    strings: ["Computer Science Student", "Web Developer", "Frontend Enthusiast"],
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+
+  
+        <section id="contact" class="bg-light text-dark py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title text-center">Quick Message</h2>
+    <p class="text-center">I'm available for collaboration or project discussion. Drop me a quick message!</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form action="https://formsubmit.co/sbraja04@gmail.com" method="POST" class="p-4 shadow rounded bg-white text-dark" data-aos="zoom-in">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+        <div class="text-center mt-4">
+          <p><i class="fas fa-phone"></i> +91 6372400473</p>
+          <p><i class="fas fa-envelope"></i> <a class="text-primary" href="mailto:sbraja04@gmail.com">sbraja04@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <p><i class="fas fa-phone"></i> +91 6372400473</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:sbraja04@gmail.com">sbraja04@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-white py-4" style="background: linear-gradient(135deg, #1f1c2c, #928dab);">
+  <div class="container">
+    <div class="mb-3">
+      <a href="#home" class="text-warning fw-bold text-decoration-none me-3">Home</a>
+      <a href="#skills" class="text-warning fw-bold text-decoration-none me-3">Skills</a>
+      <a href="#projects" class="text-warning fw-bold text-decoration-none me-3">Projects</a>
+      <a href="#contact" class="text-warning fw-bold text-decoration-none">Contact</a>
+    </div>
+    <p class="mb-1">Made with ❤️ by <strong>Brajakishore Sahoo</strong></p>
+    <p class="mb-0">&copy; 2025 All rights reserved. | <a href="mailto:sbraja04@gmail.com" class="text-light">sbraja04@gmail.com</a></p>
+  </div>
+
+</footer>
